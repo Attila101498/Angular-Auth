@@ -5,9 +5,7 @@ import { AccountService, AlertService } from '@app/_services';
 import { first } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  templateUrl: './login.component.html'
 })
 export class LoginComponent implements OnInit {
   form: FormGroup;
@@ -20,7 +18,7 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private accountService: AccountService,
     private alertService: AlertService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({

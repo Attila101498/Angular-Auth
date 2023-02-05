@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { UsersRoutingModule } from './users-routing.module';
-import { LayoutComponent } from './layout.component';
-import { ListComponent } from './list.component';
-import { AddEditComponent } from './add-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { UsersRoutingModule } from '@app/users/users-routing.module';
+import { LayoutComponent } from '@app/users/layout.component';
+import { ListComponent } from '@app/users/list.component';
+import { AddEditComponent } from '@app/users/add-edit.component';
 
 @NgModule({
   declarations: [

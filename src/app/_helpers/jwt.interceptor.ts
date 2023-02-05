@@ -6,7 +6,7 @@ import { environment } from '@environments/environment';
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
-    constructor(private accountService: AccountService) {}
+    constructor(private accountService: AccountService) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         // a felhaszbálóhoz hitelesítési fejlécet adunk a JWT-vel

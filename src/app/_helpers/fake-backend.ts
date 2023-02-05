@@ -28,12 +28,12 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                     return updateUser();
                 case url.match(/\/users\/\d+$/) && method === 'DELETE':
                     return deleteUser();
-                default: 
+                default:
                     // a fent nem kezelt kérések továbbítása
                     return next.handle(request);
             }
         }
-        
+
         function authenticate() {
             const { username, password } = body;
             const user = users.find(x => x.username === username && x.password === password);

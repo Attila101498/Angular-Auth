@@ -59,7 +59,7 @@ export class AccountService {
 
           // frissített felhasználó közzététele a feliratkozók számára
           this.userSubject.next(user);
-        } 
+        }
         return x;
       }));
   }

@@ -3,9 +3,7 @@ import { User } from '@app/_models';
 import { AccountService } from '@app/_services';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './home.component.html'
 })
 export class HomeComponent {
   user: User;

@@ -5,9 +5,7 @@ import { AccountService, AlertService } from '@app/_services';
 import { first } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  templateUrl: './register.component.html'
 })
 export class RegisterComponent implements OnInit {
   form: FormGroup;
@@ -20,7 +18,7 @@ export class RegisterComponent implements OnInit {
     private router: Router,
     private accountService: AccountService,
     private alertService: AlertService
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
